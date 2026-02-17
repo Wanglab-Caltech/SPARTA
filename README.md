@@ -1,5 +1,5 @@
 # SPARTA Data analysis
-Code used for data analysis for the original sparta paper
+Code used for data analysis for the original SPARTA paper
 
 
 ## Dependencies:
