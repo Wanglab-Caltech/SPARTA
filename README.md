@@ -8,6 +8,7 @@ The database is based on NCBI RefSeq 16S TargetedLoci sequences and supports Tax
 Important: Steps 1–3 must be run from the same working directory to ensure all intermediate files are found correctly.
 
 ## 1. ete3_build
+Create an ETE3 NCBI taxonomy SQLite database at taxdump/ncbi.sqlite.\
 Run example:
 ```console
 python ete3_build.py
