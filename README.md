@@ -9,10 +9,7 @@ Important: Steps 1–3 must be run from the same working directory to ensure all
 
 ## 1. ete3_build
 Example:
-'''
-python ete3_build.py
-'''
-
+`python ete3_build.py`
 
 ## Dependencies:
 
