@@ -35,7 +35,9 @@ python taxa_classification.py input_directory_fastq
 
 ## System Requirements
 No additional hardware is required.\
-The pipeline has been tested on macOS Ventura (13.2.1)\
+The pipeline has been tested on:\
+- Linux Ubuntu 16.04
+- macOS Ventura 13.2.1\
 Database construction requires approximately 4-5 Gb of storage. 
 
 
@@ -51,4 +53,4 @@ pandas 2.2.3
 ## Run time
 Installing packages should only take a few minutes.
 
-On a typical computer, the demos in the repository should also complete within a few minutes.
+On a normal computer, the demos in the repository should also complete within a few minutes.
