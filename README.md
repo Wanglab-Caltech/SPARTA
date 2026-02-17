@@ -10,14 +10,14 @@ Important: Steps 1–3 must be run from the same working directory to ensure all
 ## 1. ete3_build
 Create an ETE3 NCBI taxonomy SQLite database at taxdump/ncbi.sqlite.\
 Run example:
-```console
+```bash
 python ete3_build.py
 ```
 
 ## 2. Database construction
 Build a custom Kraken2 16S database from NCBI RefSeq TargetedLoci 16S FASTAs (Bacteria + Archaea).\
 Run example:
-```console
+```bash
 python build_kraken2_refseq_16s_db
 ```
 If needed, standard database can be constructed with kraken buitin-database\
@@ -29,7 +29,7 @@ This script takes a folder of FASTA/FASTQ files, runs Kraken2 on each one to do 
 It then runs Bracken on those Kraken reports to estimate abundances (at the level you set, like species),
 and converts the Bracken results into a clean CSV that includes the full taxonomy lineup (Kingdom → Species) using an ETE3 NCBI taxonomy database. 
 Run example:
-```console
+```bash
 python taxa_classification.py input_directory_fastq
 ```
 
