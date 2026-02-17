@@ -27,9 +27,9 @@ If needed, standard database can be constructed with kraken buitin-database\
 
 
 ## 3. Long-read 16S rRNA gene sequencing taxonomic classification
-This script takes a folder of FASTA/FASTQ files, runs Kraken2 on each one to do taxonomic classification, and saves the Kraken report. 
-It then runs Bracken on those Kraken reports to estimate abundances (at the level you set, like species),
-and converts the Bracken results into a clean CSV that includes the full taxonomy lineup (Kingdom → Species) using an ETE3 NCBI taxonomy database. 
+This script takes a folder of FASTA/FASTQ files, runs each one to do taxonomic classification, and saves the Kraken report. 
+Then Bracken is used to estimate abundances (at the level defined),
+and converts the results into a clean CSV that includes the full taxonomy lineup using an ETE3 NCBI taxonomy database. 
 \
 \
 Run example:
