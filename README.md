@@ -8,11 +8,35 @@ The database is based on NCBI RefSeq 16S TargetedLoci sequences and supports Tax
 Important: Steps 1–3 must be run from the same working directory to ensure all intermediate files are found correctly.
 
 ## 1. ete3_build
-Example:
-'''bash
+Run example:
+```console
 python ete3_build.py
-'''
-`python ete3_build.py`
+```
+
+## 2. Database construction
+Build a custom Kraken2 16S database from NCBI RefSeq TargetedLoci 16S FASTAs (Bacteria + Archaea).\
+Run example:
+```console
+python build_kraken2_refseq_16s_db
+```
+If needed, standard database can be constructed with kraken buitin-database\
+(https://github.com/DerrickWood/kraken2)
+
+
+## 3. Long-read 16S rRNA gene sequencing taxonomic classification
+This script takes a folder of FASTA/FASTQ files, runs Kraken2 on each one to do taxonomic classification, and saves the Kraken report. 
+It then runs Bracken on those Kraken reports to estimate abundances (at the level you set, like species),
+and converts the Bracken results into a clean CSV that includes the full taxonomy lineup (Kingdom → Species) using an ETE3 NCBI taxonomy database. 
+Run example:
+```console
+python taxa_classification.py input_directory_fastq
+```
+
+## System Requirements
+No additional hardware is required.\
+The pipeline has been tested on macOS Ventura (13.2.1)\
+Database construction requires approximately 4-5 Gb of storage. 
+
 
 ## Dependencies:
 
