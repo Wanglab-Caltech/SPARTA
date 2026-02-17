@@ -1,6 +1,18 @@
 # SPARTA Data analysis
 Code used for data analysis for the original SPARTA paper
 
+## Overview
+This pipeline builds a custom database for taxonomic classification of long-read 16S rRNA gene sequencing data.\
+The database is based on NCBI RefSeq 16S TargetedLoci sequences and supports TaxID-aware classification and downstream lineage (taxonomy tree) annotation.\
+(https://www.ncbi.nlm.nih.gov/nuccore?term=33175%5BBioProject%5D+OR+33317%5BBioProject%5D)\
+Important: Steps 1–3 must be run from the same working directory to ensure all intermediate files are found correctly.
+
+## 1. ete3_build
+Example:
+'''
+python ete3_build.py
+'''
+
 
 ## Dependencies:
 
