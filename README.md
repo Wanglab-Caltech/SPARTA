@@ -39,7 +39,7 @@ python taxa_classification.py input_directory_fastq
 
 ## System Requirements
 No additional hardware is required.\
-The pipeline has been tested on:\
+The pipeline has been tested on:
 - Linux Ubuntu 16.04
 - macOS Ventura 13.2.1\
 Database construction requires approximately 4-5 Gb of storage. 
